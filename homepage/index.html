@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- jQuery and Bootstrap bundle (includes Popper) for Javascript-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Responsive viewport meta tag (ensures proper rendering and touch zooming for different device types -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CSS Stylesheet -->
+        <link href="styles.css" rel="stylesheet">
+        <!--Javascript-->
+        <script src="homepage.js"></script>
+
+        <title>My Webpage</title>
+    </head>
+
+    <body id='name'>
+        <header>
+            <!--Create a dark theme navbar using Bootstrap-->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a href="index.html" class="navbar-brand">Yusuf Siddiqui</a>
+                <!--Create a collapsable drop down menu for buttons to go into when on smaller screens-->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <!--Main tabs-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sports.html" class="nav-link">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="books.html" class="nav-link">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="travels.html" class="nav-link">Travels</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--Main body-->
+        <img class="profile" src="my_profile_pic.jfif" alt="Avatar">
+        <pre class ="mobile-intro">
+            Hi, I'm Yusuf.
+
+            I'm a sophomore attending the <a href="https://www.umbc.edu/" target="blank"><font color="black">University of Maryland Baltimore-County</font></a>
+            where I'm studying Computer Science. Check out the tabs above to see
+            some of things I'm interested in!
+
+            If you would like to contact me or see more of my work,
+            click on one of the buttons below.
+        </pre>
+        <pre class ="computer-intro">
+            Hi, I'm Yusuf.
+
+            I'm a sophomore attending the <a href="https://www.umbc.edu/" target="blank"><font color="black">University of Maryland Baltimore-County</font></a>
+            where I'm studying Computer Science. Check out the tabs above to see
+            some of things I'm interested in!
+
+            If you would like to contact me or see more of my work, click on one of the buttons below.
+        </pre>
+        <!--Social icons-->
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/yusufmsid" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/itsyusufsid" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="mailto:itsyusufsid@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://github.com/ysc8d3z" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </body>
+</html>

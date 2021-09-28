@@ -1,0 +1,267 @@
+/*Set color of tabs */
+nav li a {
+    color: white !important;
+}
+
+/*Set color of background */
+body {
+    background-color: white;
+}
+
+/*Make all navbar characters uppercase */
+nav a {
+    text-transform: uppercase;
+}
+
+/*Spacing and positioning of tabs */
+nav li {
+    margin-left: 50px;
+    padding-top: 15px;
+    position: relative;
+}
+
+/*Create a sliding line effect and make it invisible */
+nav li:before {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+/*Make sliding line effect visible only when mouse is hovering on tab */
+nav li:hover:before {
+    width: 90%;
+}
+
+.profile {
+    position: relative;
+    left: 4%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    width: 18%;
+    height: 25%;
+}
+
+/*Position intro */
+.mobile-intro {
+    text-align: left;
+    position: relative;
+    top: 50%;
+    left: 0%;
+    font-family: Verdana;
+    font-size: 9px;
+}
+
+.computer-intro {
+    visibility: hidden;
+}
+
+.icons {
+    position: relative;
+    left: 4%;
+    margin-top: -40%;
+}
+
+.icons i {
+    position: relative;
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.basketball img {
+    border: 3px solid black;
+    position: relative;
+    top: 10%;
+    left: 0%;
+    height: 40%;
+    width: 100%;
+}
+
+.mobile-sports {
+    padding-top: 1%;
+    position: relative;
+    top: 25%;
+    right: 5%;
+    font-size: 12px;
+    font-family: verdana;
+}
+
+.computer-sports {
+    visibility: hidden;
+}
+
+.football-pic {
+    border: 3px solid black;
+    margin-top: -40%;
+    height: 1%;
+    width: 100%;
+}
+
+.universal-studios img {
+    position: relative;
+    top: 10%;
+    height: auto;
+    width: 100%;
+}
+
+.universal-studios-caption {
+    position: relative;
+    top: 20%;
+    right: 31%;
+}
+
+.hogwarts img {
+    position: relative;
+    top: 50%;
+    left: 1%;
+    height: auto;
+    width: 100%;
+}
+
+.hogwarts-caption {
+    position: relative;
+    top: 20%;
+    left: 1%;
+}
+
+.egypt img {
+    position: relative;
+    top: 100%;
+    left: 1%;
+    height: auto;
+    width: 100%;
+}
+
+.egypt-caption {
+    position: relative;
+    top: 20%;
+    right: 31%;
+}
+
+/* For Computer Screen */
+@media (min-width: 1000px) {
+
+    .profile {
+        position: relative;
+        left: 18%;
+        margin-top: 8%;
+        border-radius: 50%;
+        width: 8%;
+        height: 15%;
+    }
+
+    /*Position intro */
+    .computer-intro {
+        visibility: visible;
+        position: fixed;
+        top: 28%;
+        left: 25%;
+        font-family: Verdana;
+        font-size: 16px;
+    }
+
+    .mobile-intro {
+        visibility: hidden;
+    }
+
+    .icons {
+        position: fixed;
+        left: 17%;
+        bottom: 40%;
+    }
+
+    .icons i {
+        position: relative;
+        left: 15%;
+        bottom: 5%;
+        background: black;
+        color: white;
+        font-size: 14px;
+        padding: 6px;
+        border-radius: 50%;
+    }
+
+    .basketball img {
+        border: 5px solid black;
+        position: fixed;
+        top: 10%;
+        left: 1%;
+        height: 40%;
+        width: 15%;
+    }
+
+    .football-pic {
+        border: 5px solid black;
+        position: fixed;
+        top: 90.6%;
+        right: 1%;
+        height: 40%;
+        width: 15%;
+    }
+
+    .computer-sports {
+        visibility: visible;
+        font-size: 18px;
+        font-family: verdana;
+        margin: 5px 250px;
+    }
+
+    .mobile-sports {
+        visibility: hidden;
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+
+    .universal-studios img {
+        position: relative;
+        top: 10%;
+        left: 30%;
+        height: 100%;
+        width: 35%;
+    }
+
+    .universal-studios-caption {
+        position: relative;
+        top: 20%;
+        left: 22%;
+    }
+
+    .hogwarts img {
+        position: relative;
+        top: 50%;
+        left: 30%;
+        height: 100%;
+        width: 35%;
+    }
+
+    .hogwarts-caption {
+        position: relative;
+        top: 20%;
+        left: 30%;
+    }
+
+    .egypt img {
+        position: relative;
+        top: 100%;
+        left: 30%;
+        height: 100%;
+        width: 35%;
+    }
+
+    .egypt-caption {
+        position: relative;
+        top: 20%;
+        left: 22%;
+    }
+}
